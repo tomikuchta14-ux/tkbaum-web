@@ -1,0 +1,21 @@
+media:
+  input: public/images
+  output: /images
+
+content:
+  - name: projects
+    label: Projekty
+    type: collection
+    path: content/projects
+    format: json
+    filename: "{primary}.json"
+    fields:
+      - name: title
+        label: Názov projektu
+        type: string
+      - name: description
+        label: Popis
+        type: text
+      - name: image
+        label: Fotografia
+        type: image
